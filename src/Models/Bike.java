@@ -3,23 +3,18 @@ package Models;
 import Abstract.Transport;
 import frame.MyFrame;
 
+import javax.swing.*;
+import java.awt.*;
+
 public class Bike extends Transport
 {
-    public Bike(int generationInterval, int probability)
-    {
-        this.generationInterval = generationInterval;
-        this.probability = probability;
-    }
-
     @Override
-    public void Create()
+    public void show(MyFrame myFrame)
     {
+        var g = myFrame.getGraphics();
+        Graphics2D g2 = (Graphics2D)g; // Приводим к более современному виду
 
-    }
-
-    @Override
-    public void Show(MyFrame myFrame)
-    {
-
+        Image img = new ImageIcon("src/resourse/bike.png").getImage();
+        g2.drawImage(img, 100, 100, null);
     }
 }
