@@ -1,7 +1,7 @@
-import frame.MyFrame;
+import frame.Habitat;
 
 public class Main {
     public static void main(String[] args) {
-        new MyFrame();
+        new Habitat();
     }
 }

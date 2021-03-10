@@ -1,8 +1,8 @@
 package Models;
 
-import frame.MyFrame;
+import frame.Habitat;
 
 public interface IBehaviour
 {
-    void show(MyFrame myFrame);
+    void show(Habitat habitat);
 }

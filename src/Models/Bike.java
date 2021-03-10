@@ -1,20 +1,22 @@
 package Models;
 
 import Abstract.Transport;
-import frame.MyFrame;
+import frame.Habitat;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.Random;
 
 public class Bike extends Transport
 {
     @Override
-    public void show(MyFrame myFrame)
+    public void show(Habitat habitat)
     {
-        var g = myFrame.getGraphics();
+        var g = habitat.getGraphics();
         Graphics2D g2 = (Graphics2D)g; // Приводим к более современному виду
 
+        Random rnd = new Random();
         Image img = new ImageIcon("src/resourse/bike.png").getImage();
-        g2.drawImage(img, 100, 100, null);
+        g2.drawImage(img, rnd.nextInt(Habitat.SIZE - SIZEIMAGE), rnd.nextInt(Habitat.SIZE - SIZEIMAGE), null);
     }
 }

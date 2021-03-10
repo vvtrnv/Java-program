@@ -17,18 +17,10 @@ public abstract class Transport implements IBehaviour
     //Путь к картинке обьекта.
     public static Image picture;
 
+    public final int SIZEIMAGE = 32;
+
     public static void setStaticProperties(int generationIntervall, int probabilityy, String pathPicturee)
     {
-        generationInterval = generationIntervall;
-        probability = probabilityy;
-
-        try
-        {
-            picture = ImageIO.read(new File(pathPicturee));
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
+        //Any code
     }
 }
