@@ -23,4 +23,7 @@ public class MyFrame extends JFrame {
         setBounds(width, height, 800, 800);
         setVisible(true);
     }
+
+
+
 }
